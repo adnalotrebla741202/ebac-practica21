@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/181bfa78bf.js" crossorigin="anonymous"></script>
+    <link 
+        href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;700&display=swap" rel="stylesheet"
+    >
+    <link rel="icon" href="assets/ico/Logo_ConTexto.ico">
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="js/functions.js" defer></script>
+    <title>Práctica 21</title>
+</head>
+<body>
+    <header>
+        <i onclick="toggleMenu()"><img src="assets/img/menu.png" alt="Icono de despliegue del menú de opciones"></i>
+        <img src="assets/img/Logo_ConTexto.png" alt="Logo del portal web">
+        <i>
+            <img src="assets/img/shopping.png" alt="Icono de despliegue del carrito de compras">
+            <span class="badge" id="cartBadge">0</span>
+        </i>
+    </header>
+
+    <div class="menu" id="sidebar">
+        <span class="close" onclick="toggleMenu()">X</span>
+        <p><em class="fa-solid fa-home"></em> Inicio</p>
+        <p><em class="fa-solid fa-image"></em> Galería</p>
+        <p><em class="fa-solid fa-users"></em> Nosotros</p>
+        <p><em class="fa-solid fa-phone"></em> Contacto</p>
+        <p><em class="fa-solid fa-calendar-days"></em> Eventos</p>
+    </div>
+
+    <main>
+        <section class="banner">
+            <h2>Nuestros Productos</h2>
+        </section>
+
+        <section class="products">
+            <article>
+                <img src="assets/img/MEMELAS_VERSION2_03.png" alt="Foto de producto memela poblana">
+                <h3>Memelas</h3>
+                <p>$30</p>
+                <button class="buy-product">Agregar al carrito</button>
+            </article>
+            
+            <article>
+                <img src="assets/img/PELONAS_VERSION2_03.png" alt="Foto de producto pelona poblana">
+                <h3>Pelonas</h3>
+                <p>$30</p>
+                <button class="buy-product">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="assets/img/CHANCLAS_VERSION2_03.png" alt="Foto de producto chancla poblana">
+                <h3>Chanclas</h3>
+                <p>$30</p>
+                <button class="buy-product">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="assets/img/CHALUPAS_VERSION2_03.png" alt="Foto de producto chalupas poblanas">
+                <h3>Chalupas</h3>
+                <p>$30</p>
+                <button class="buy-product">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="assets/img/ATOLE_03.png" alt="Foto de producto atole del día">
+                <h3>Atole</h3>
+                <p>$30</p>
+                <button class="buy-product">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="assets/img/CAFE_03.png" alt="Foto de producto café">
+                <h3>Café</h3>
+                <p>$30</p>
+                <button class="buy-product">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="assets/img/REFRESCO03.png" alt="Foto de bebida gaseosa">
+                <h3>Refresco</h3>
+                <p>$30</p>
+                <button class="buy-product">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="assets/img/LASSI_03.png" alt="Foto de bebida a base de yogurt lassi">
+                <h3>Lassi</h3>
+                <p>$30</p>
+                <button class="buy-product">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="assets/img/BISTEC_RES03.png" alt="Foto de carne asada de res">
+                <h3>Bistec Asado</h3>
+                <p>$30</p>
+                <button class="buy-product">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="assets/img/CEMITA_CARNE_ASADA03.png" alt="Foto de cemita de carne asada de res">
+                <h3>Cemita</h3>
+                <p>$30</p>
+                <button class="buy-product">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="assets/img/FRUTA_CON_YOGUR04.png" alt="Foto de producto fruta con yogur">
+                <h3>Fruta Con Yogur</h3>
+                <p>$30</p>
+                <button class="buy-product">Agregar al carrito</button>
+            </article>
+
+            <article>
+                <img src="assets/img/TACOS_BISTEC_CON_CHORIZO03.png" alt="Foto de producto tacos de bistec con chorizo">
+                <h3>Tacos</h3>
+                <p>$30</p>
+                <button class="buy-product">Agregar al carrito</button>
+            </article>
+        </section>
+
+        <section class="cart">
+            <h2>CARRITO</h2>
+            <div class="cart-items"></div>
+            <div class="total">
+                <h3>Total: <span id="totalAmount">$0</span></h3>
+                <button id="confirmPurchase">Confirmar Compra</button>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
